@@ -1,0 +1,52 @@
+CONTEXT API
+
+1) create context 
+2) provider 
+3) consumer	/ useContext Hook
+
+1) context create kerke us ke provider create kareinge
+2) App ko Provider ke andar rakheinge 
+3) Provider me children pass kardeinge or value bh
+
+useReducer Hook
+
+useReducer ka hook 2 argument leta h 
+first : reducer
+second : initial state
+
+reducer function define karna parta h jis me parameter me state,action milte hn 
+state me current state mil rahi hoti hai or second parameter me action milta h
+
+const [state, dispatch] = useReducer(reducer, initialState);
+
+useReducer(reducer, initialState);
+
+useReducer ek reducer function leta h jis me action ke hisab se function perform krwa rahe hota hn 
+
+const reducer = (state, action) => {
+    if (action.type === "INCREMENT") {
+      return Number(state) + 1;
+    }
+    if (action.type === "DECREMENT") {
+      return Number(state) - 1;
+    }
+    return action;
+  };
+
+state me current state ha 
+dispatch call kara deta ha reducer ko jis me actions ka hisab se function perform horahe hiani
+
+
+
+
+
+
+
+
+
+
+
+
+
+Redux
+
