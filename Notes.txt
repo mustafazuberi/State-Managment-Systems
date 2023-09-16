@@ -49,4 +49,31 @@ dispatch call kara deta ha reducer ko jis me actions ka hisab se function perfor
 
 
 Redux
+ACTION: what to do (action me type or payload bhjta hain)
+REDUCER: How to do (according to type function perform krwate hain)
+STORE: centeralitzed state holding data
 
+
+
+
+
+
+
+Redux Toolkit
+
+simple wale redux me state ko direct mutate nahi kar sakte .. new state return karta hain reducer me state update karane ke lye 
+lekin redux toolkit me mutate kar sakte hn or push kra skte han array m ya koi bh change... redux toolkit me change kr sakte ha zaorri nahi h new state update krao
+
+redux toolkit me state ko directly mutate karte hain 
+or simple redux me nahi kar sakte
+
+
+reducers me APi calls ya koi asynchronous task nahi kar sakte Qyun ke reducers Synchronously call hote hain 
+or Agar humein asynchronous operation karna h tw thunk middle ware use kareinge
+
+THUNK ---- IS me ek function banate hain Or us ke andar se ek async function return karwate hain
+andar wale function ke andar parameter mil jate hain 2 dispatch or get
+
+lekin is me hamain manual state me updates krni par rahi ha like loading error or idle 
+
+is ka liye reddux toolkit hamain function deta hai

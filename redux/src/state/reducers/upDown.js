@@ -7,6 +7,6 @@ const changeNumber = (state = initialState, action) => {
     return state - 1;
   }
 
-  return state
+  return state;
 };
 export default changeNumber;
